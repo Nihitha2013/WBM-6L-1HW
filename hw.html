@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<body><center>
+    <h2>Random Number Generator</h2>
+    <button onclick="myFunction()">Generate Numbers</button>
+    <p id="result"></p>
+    </center>
+
+<script>
+    function myFunction() {
+        let count = 0;
+        let output = "";
+
+        while (count < 5) {
+            let random = Math.floor(Math.random() * 100) + 1;
+            output += random + ", ";
+            count++;
+        }
+
+        document.getElementById("result").innerHTML =
+            "Random Numbers = " + output;
+    }
+</script>
+
+</body>
+</html>
